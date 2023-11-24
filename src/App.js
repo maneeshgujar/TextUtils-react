@@ -1,7 +1,7 @@
 // import logo from './logo.svg';
 import { useState } from 'react';
 import './App.css';
-// import About from './components/About'; //removed about because github pages does not support routing
+import About from './components/About'; //remove about because github pages does not support routing
 import Navbar from './components/Navbar';
 import Textarea from './components/Textarea';
 import Alert from './components/Alert';
@@ -51,7 +51,7 @@ let toggleMode=()=>{
       <Alert alert={alert}/>
       <Router>
       <Routes>
-          {/* <Route path="/about" element={<About mode={mode}/>}/> */}
+          <Route path="/about" element={<About mode={mode}/>}/>
           <Route path="/" element={<Textarea text="Enter The Text To Analyse Below" mode={mode} showalert={showalert}/>}/> 
         </Routes>
          </Router> 
